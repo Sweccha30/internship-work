@@ -20,7 +20,7 @@
     <meta name="robots"
           content="index, follow">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,67 +29,108 @@
     Skip to Main Content
 </a>
 
-<header>
+    <header>
+    <div class="container">
 
-    <h1>Sweccha Yadav</h1>
+        <div class="logo">
+            My Portfolio
+        </div>
 
-    <nav aria-label="Primary Navigation">
+        <nav>
+            <ul>
 
-        <ul>
+                <li><a href="index.html" class="active">Home</a></li>
 
-            <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="home.html">About</a></li>
 
-            <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
 
-            <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
 
-            <li><a href="contact.html">Contact</a></li>
+        <button class="theme-btn" id="theme-btn">
+            🌙
+        </button>
 
-        </ul>
-
-    </nav>
-
+    </div>
 </header>
+
+
 
 <main id="main-content">
 
-<section aria-labelledby="hero-heading">
+<section class="hero" aria-labelledby="hero-heading">
 
-<h2 id="hero-heading">
-Hello, I'm Sweccha
-</h2>
+    <div class="hero-text">
 
-<p>
-Full Stack Developer passionate about building accessible web applications.
-</p>
+        <h1 id="hero-heading">
+            Hi, I'm <span>Sweccha Yadav</span>
+        </h1>
 
-<a href="projects.html">
-View My Work
-</a>
+        <p>
+            Passionate Full Stack Developer specializing in the MERN Stack, Java, and modern web technologies. I enjoy building responsive, user-friendly, and accessible web applications that solve real-world problems.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="project.html" class="btn">
+                View Projects
+            </a>
+
+            <a href="home.html" class="btn btn-outline">
+                About Me
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="images/profile.jpg"
+             alt="Sweccha Yadav">
+
+    </div>
 
 </section>
 
-<section aria-labelledby="skills">
+<section class="skills-section" aria-labelledby="skills">
 
-<h2 id="skills">
-Skills
-</h2>
+    <h2 id="skills">Technical Skills</h2>
 
-<ul>
+    <div class="skills-grid">
 
-<li>HTML5</li>
+        <div class="skill-card">
+            <h3>HTML5</h3>
+            <p>Semantic and accessible web development.</p>
+        </div>
 
-<li>CSS3</li>
+        <div class="skill-card">
+            <h3>CSS3</h3>
+            <p>Responsive layouts using Grid and Flexbox.</p>
+        </div>
 
-<li>JavaScript</li>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Modern ES6+ programming and DOM manipulation.</p>
+        </div>
 
-<li>React</li>
+        <div class="skill-card">
+            <h3>React.js</h3>
+            <p>Building interactive single-page applications.</p>
+        </div>
 
-<li>Node.js</li>
+        <div class="skill-card">
+            <h3>Node.js</h3>
+            <p>Creating scalable backend applications.</p>
+        </div>
 
-<li>MongoDB</li>
+        <div class="skill-card">
+            <h3>MongoDB</h3>
+            <p>Managing NoSQL databases efficiently.</p>
+        </div>
 
-</ul>
+    </div>
 
 </section>
 
@@ -103,6 +144,7 @@ Skills
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ content="width=device-width, initial-scale=1.0">
 <meta name="description"
 content="Explore software development projects by Sweccha Yadav.">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -21,63 +21,120 @@ content="Explore software development projects by Sweccha Yadav.">
 
 <header>
 
-<h1>Projects</h1>
+    <div class="container">
 
-<nav aria-label="Primary Navigation">
+        <div class="logo">
+            My Portfolio
+        </div>
 
-<ul>
+        <nav>
 
-<li><a href="index.html">Home</a></li>
+            <ul>
 
-<li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
 
-<li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="home.html">About</a></li>
 
-<li><a href="contact.html">Contact</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
 
-</ul>
+            </ul>
 
-</nav>
+        </nav>
+
+        <button class="theme-btn" id="theme-btn">
+            🌙
+        </button>
+
+    </div>
 
 </header>
 
-<main>
+<main id="main-content">
 
-<section aria-labelledby="project-list">
+<section class="projects-section">
 
-<h2 id="project-list">
-Featured Projects
-</h2>
+<h2>Featured Projects</h2>
 
-<article>
+<div class="projects-grid">
 
-<h3>ShopNest MERN Ecommerce</h3>
+    <article class="project-card">
 
-<p>
-An ecommerce platform built using React, Node.js, Express, and MongoDB.
-</p>
+        <div class="project-content">
 
-</article>
+            <h3>ShopNest MERN Ecommerce</h3>
 
-<article>
+            <p>
+                A full-stack e-commerce platform built using React, Node.js,
+                Express, MongoDB, Redux Toolkit, and JWT Authentication.
+            </p>
 
-<h3>Spotify Backend Clone</h3>
+            <div class="project-buttons">
 
-<p>
-Music streaming backend with authentication and album management.
-</p>
+                <a href="https://github.com/Sweccha30/Shopnest-ECOM" target="_blank">
+                    GitHub
+                </a>
 
-</article>
+                <a href="https://shopnest-ecom-blond.vercel.app/" target="_blank">
+                    Live Demo
+                </a>
 
-<article>
+            </div>
 
-<h3>Weather App</h3>
+        </div>
 
-<p>
-Weather forecast application using OpenWeather API.
-</p>
+    </article>
 
-</article>
+    <article class="project-card">
+
+        <div class="project-content">
+
+            <h3>Music Streaming Backend</h3>
+
+            <p>
+                Backend music streaming system with JWT authentication,
+                ImageKit integration, album management, and MongoDB.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="https://github.com/Sweccha30/music-sytem-backend" target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <article class="project-card">
+
+        <div class="project-content">
+
+            <h3>Weather App</h3>
+
+            <p>
+                Responsive weather application using JavaScript and the
+                OpenWeather API with real-time weather information.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="#" target="_blank">
+                    Live Demo
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
 
 </section>
 
@@ -85,9 +142,25 @@ Weather forecast application using OpenWeather API.
 
 <footer>
 
-<p>© 2026 Sweccha Yadav</p>
+    <div class="container">
+
+        <h3>Sweccha Yadav</h3>
+
+        <p>
+            Full Stack Developer | MERN Stack | Java | AI Enthusiast
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 Sweccha Yadav. All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
